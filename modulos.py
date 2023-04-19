@@ -13,7 +13,7 @@ def ingresar_real (numero):
             print("Error. \nEl valor no corresponde a la categoria real")
     return valor
 
-def ingresar_texto (letra):
+def ingresar_string (letra):
     valor = None
     while valor == None:
         try: 
