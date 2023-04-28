@@ -62,7 +62,22 @@ def verificar_limite(numero, rango_minimo, rango_maximo): # dos limites
             centinela = False
     return valor
 
-
 def mostrar_mensaje(mensaje):
     print(mensaje)
 
+def generar_mensaje_tabla_multiplicacion(numero_tabla, valor_minimo, valor_maximo):
+   mensaje = f"\nTabla de multiplicación del {numero_tabla}\n\n"
+   i = valor_minimo
+   while i <= valor_maximo:
+       producto = numero_tabla * i
+       mensaje += f"{numero_tabla:2d} x {i:2d} = {producto:3d}\n"
+       i = i + 1
+   return mensaje
+
+def verificar_es_vocal (letra):
+    es_vocal = letra.lower() in "aeiou" #True or False
+    return es_vocal
+
+def identificar_consonantes(respuesta):
+    vocal=respuesta.lower() not in "aeiou"
+    return vocal
